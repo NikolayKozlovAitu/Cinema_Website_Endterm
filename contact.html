@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div id="nav-logo">CINEMA</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="movies.html">Movies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="contact-container">
+                <h2 class="text-center mb-4">Book Ticket / Contact Us</h2>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                        <div id="error-message" class="mt-2"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="movie" class="form-label">Select Movie:</label>
+                        <select id="movie" name="movie" class="form-control">
+                            <option value="1">Interstellar</option>
+                            <option value="2">Inception</option>
+                            <option value="3">The Dark Knight</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message / Special Requests:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="button-cards btn btn-danger w-100">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    Cinema Website
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
